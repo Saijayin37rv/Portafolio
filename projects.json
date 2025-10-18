@@ -1,0 +1,37 @@
+[
+  {
+    "title": "Menú de comidas de un local",
+    "description": "Menú virtual usando tecnologías web. Repositorio en GitHub.",
+    "category": "tours__Web",
+    "image": "proyecto1.png",
+    "url": "proyecto1.html"
+  },
+  {
+    "title": "Appsheet",
+    "description": "Aplicación en Appsheet para gestionar entradas y salidas y generar PDFs.",
+    "category": "gym",
+    "image": "proyecto2.png",
+    "url": "proyecto2.html"
+  },
+  {
+    "title": "Centro de Rehabilitación",
+    "description": "Página informativa para un centro de rehabilitación.",
+    "category": "tours__Web",
+    "image": "proyecto3.png",
+    "url": "proyecto3.html"
+  },
+  {
+    "title": "Chatbot AI Reclutamiento",
+    "description": "Chatbot con IA integrado en WhatsApp y Messenger.",
+    "category": "gym",
+    "image": "proyecto4.jpg",
+    "url": "proyecto4.html"
+  },
+  {
+    "title": "App de comidas (Didi-like)",
+    "description": "App móvil para pedidos y seguimiento de estado.",
+    "category": "world__Tours",
+    "image": "proyecto5.jpg",
+    "url": "proyecto5.html"
+  }
+]

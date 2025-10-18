@@ -1,0 +1,47 @@
+{
+	"folders": [
+		{
+			"name": "PROYECTOS",
+			"path": "../PROYECTOS"
+		},
+		{
+			"name": "whatsapp-bot",
+			"path": "../whatsapp-bot"
+		},
+		{
+			"name": "er",
+			"path": "../er"
+		},
+		{
+			"name": "bot_ventas_python",
+			"path": "../bot_ventas_python"
+		},
+		{
+			"name": "PRUEBAS AI",
+			"path": "../PRUEBAS AI"
+		},
+		{
+			"name": "RH BOT WHATSAPP",
+			"path": "../RH BOT WHATSAPP"
+		},
+		{
+			"name": "PORTAFOLIO",
+			"path": "."
+		},
+		{
+			"name": "CENTRO",
+			"path": "../CENTRO"
+		},
+		{
+			"name": "PRUEBAS SALTUS",
+			"path": "../PRUEBAS SALTUS"
+		},
+		{
+			"name": "CURSITO",
+			"path": "../CURSITO"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "PORTAFOLIO"
+	}
+}

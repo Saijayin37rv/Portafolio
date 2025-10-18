@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú Virtual - Detalles del Proyecto</title>
+    <link href="https://fonts.googleapis.com/css?family=Fira+Mono:400,500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: #181818;
+            color: #f5f5f5;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            background: #232323;
+            border-radius: 14px;
+            box-shadow: 0 4px 24px #0003;
+            padding: 36px 28px;
+            position: relative;
+        }
+        h1 {
+            font-size: 2.1rem;
+            margin-bottom: 0.5em;
+            color: #f87171;
+            text-align: center;
+            letter-spacing: 1px;
+            text-shadow: 0 2px 12px #b91c1c55;
+        }
+        h2 {
+            color: #ef4444;
+            margin-top: 32px;
+            margin-bottom: 14px;
+            font-size: 1.25rem;
+            letter-spacing: 0.5px;
+        }
+        .steps {
+            margin-bottom: 2em;
+        }
+        .step {
+            margin-bottom: 1.2em;
+            padding-left: 1.2em;
+            border-left: 3px solid #f87171;
+        }
+        .step-title {
+            font-weight: bold;
+            color: #f87171;
+        }
+        .proyecto1-imgs {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 22px;
+            justify-content: center;
+            margin: 38px 0 18px 0;
+        }
+        .proyecto1-imgs img {
+            border-radius: 10px;
+            box-shadow: 0 4px 18px rgba(185,28,28,0.18);
+            width: 220px;
+            max-width: 90vw;
+            object-fit: cover;
+            background: #232326;
+            border: 2px solid #b91c1c55;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .proyecto1-imgs img:hover {
+            transform: scale(1.045);
+            box-shadow: 0 8px 32px #b91c1c55;
+        }
+        .img-caption {
+            text-align: center;
+            font-size: 1rem;
+            color: #f87171;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            font-weight: 500;
+            letter-spacing: 0.2px;
+        }
+        .nota-dev {
+            background: #232326;
+            border-left: 4px solid #f87171;
+            padding: 14px 18px;
+            margin: 32px 0 0 0;
+            border-radius: 8px;
+            color: #f87171;
+            font-size: 1.08rem;
+            font-style: italic;
+            box-shadow: 0 2px 8px #b91c1c22;
+        }
+        .code-section {
+            background: #181c20;
+            border-radius: 8px;
+            padding: 1.5em 1em;
+            margin-top: 2em;
+            box-shadow: 0 2px 8px #0002;
+        }
+        .code-section h2 {
+            font-size: 1.1rem;
+            color: #f87171;
+            margin-bottom: 1em;
+        }
+        pre {
+            background: none;
+            color: #e0e0e0;
+            font-family: 'Fira Mono', 'Consolas', monospace;
+            font-size: 1em;
+            margin: 0;
+            overflow-x: auto;
+        }
+        code {
+            background: none;
+            color: #a3e635;
+        }
+        @media (max-width: 600px) {
+            .container {
+                padding: 12px 2vw;
+            }
+            .proyecto1-imgs img {
+                width: 98vw;
+                max-width: 98vw;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Menú Virtual - Proyecto Web</h1>
+        <div class="proyecto1-imgs">
+            <div>
+                <img src="ejemplo1.png" alt="Menú virtual - inicio">
+                <div class="img-caption">Vista principal del menú virtual</div>
+            </div>
+            <div>
+                <img src="ejemplo2.png" alt="Menú virtual - categorías">
+                <div class="img-caption">Selección de categorías y productos</div>
+            </div>
+            <div>
+                <img src="ejemplo3.png" alt="Menú virtual - pedidos">
+                <div class="img-caption">Creación de pedidos en tiempo real</div>
+            </div>
+        </div>
+        <div class="steps">
+            <div class="step">
+                <div class="step-title">¿Cómo se creó?</div>
+                <ul>
+                    <li>Se desarrolló una web app usando <b>HTML, CSS y JavaScript</b> para ofrecer un menú virtual interactivo y responsivo.</li>
+                    <li>El menú permite a los clientes seleccionar productos, agregarlos a un carrito y visualizar el total en tiempo real.</li>
+                    <li>El proyecto fue el primer paso antes de crear la app móvil, y ayudó a optimizar el tiempo de preparación de los pedidos y mejorar la experiencia del cliente.</li>
+                    <li>Se publicó en línea usando GitHub Pages para facilitar el acceso desde cualquier dispositivo.</li>
+                    <li>
+                        <a href="https://saijayin37rv.github.io/SUSHI_KITO-S/" target="_blank" style="color:#f87171; text-decoration:underline; font-weight:bold;">
+                            Ver menú en línea
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <h2>Características principales</h2>
+        <ul>
+            <li>Interfaz intuitiva y responsiva para cualquier dispositivo.</li>
+            <li>Selección de productos por categorías y visualización de imágenes.</li>
+            <li>Carrito interactivo con actualización automática del total.</li>
+            <li>Facilita la toma de pedidos y reduce errores en la comunicación.</li>
+        </ul>
+        <h2>Ejemplo de código del menú interactivo</h2>
+        <div class="code-section">
+            <pre><code>
+&lt;div class="menu"&gt;
+  &lt;div class="menu-item"&gt;
+    &lt;img src="sushi.jpg" alt="Sushi"&gt;
+    &lt;h3&gt;Sushi Individual&lt;/h3&gt;
+    &lt;p&gt;$95&lt;/p&gt;
+    &lt;button onclick="addToCart('Sushi Individual', 95)"&gt;Añadir&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="cart"&gt;
+  &lt;h2&gt;Tu pedido&lt;/h2&gt;
+  &lt;div id="cart-items"&gt;&lt;/div&gt;
+  &lt;div id="cart-total"&gt;Total: $0&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;script&gt;
+  const cart = {};
+  function addToCart(name, price) {
+    if (!cart[name]) cart[name] = { qty: 0, price };
+    cart[name].qty += 1;
+    renderCart();
+  }
+  function renderCart() {
+    let total = 0;
+    const items = Object.entries(cart);
+    document.getElementById('cart-items').innerHTML = items.length === 0
+      ? '&lt;em&gt;El carrito está vacío.&lt;/em&gt;'
+      : items.map(([name, item]) =&gt; {
+          total += item.qty * item.price;
+          return `${item.qty} x ${name} &lt;span&gt;$${item.qty * item.price}&lt;/span&gt;`;
+        }).join('&lt;br&gt;');
+    document.getElementById('cart-total').textContent = 'Total: $' + total;
+  }
+  renderCart();
+&lt;/script&gt;
+            </code></pre>
+        </div>
+        <div class="nota-dev">
+            <strong>Nota personal:</strong> Este menú virtual fue el primer paso antes de la app móvil y marcó el inicio de mi camino como desarrollador. Me permitió ayudar a optimizar el proceso de pedidos y mejorar la atención al cliente, y fue una base fundamental para proyectos más grandes y personales.
+        </div>
+    </div>
+</body>
+</html>
