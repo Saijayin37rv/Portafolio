@@ -1,4 +1,4 @@
-from flask import Flask, send_from_directory, jsonify, request
+from flask import Flask, send_from_directory, jsonify, request, abort
 from pathlib import Path
 import json
 
@@ -29,6 +29,16 @@ def index():
 def static_files(filename):
     return send_from_directory(str(BASE_DIR / 'static'), filename)
 
+@app.route('/assets/<path:filename>')
+def assets_files(filename):
+    # Serve images/files referenced from the root `assets/` folder.
+    return send_from_directory(str(BASE_DIR / 'assets'), filename)
+
+@app.route('/evidencias ts/<path:filename>')
+def evidencias_files(filename):
+    # Serve evidence images/videos referenced from the root `evidencias ts/` folder.
+    return send_from_directory(str(BASE_DIR / 'evidencias ts'), filename)
+
 @app.route('/api/projects', methods=['GET'])
 def get_projects():
     projects = load_json(PROJECTS_FILE, [])
@@ -48,6 +58,13 @@ def post_contact():
     contacts.append(contact)
     save_json(CONTACTS_FILE, contacts)
     return jsonify({'status': 'ok'})
+
+@app.route('/<path:filename>')
+def root_html_files(filename):
+    # Allow navigation to local project pages like `/almacen.html` when running Flask.
+    if filename.endswith(('.html', '.css', '.js')):
+        return send_from_directory(str(BASE_DIR), filename)
+    abort(404)
 
 if __name__ == '__main__':
     app.run(debug=True, port=5000)
